@@ -1,371 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sites</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
+  <meta charset="UTF-8">
+  <title>Login</title>
   <style>
-    body { margin: 0; padding: 0; }
-    #map { width: 100%; height: 100vh; }
-
-    #search {
-      position: absolute;
-      top: 10px;
-      left: 50px;
-      z-index: 1000;
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f5f5f5;
+    }
+    #login-box {
       background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 10px;
+    }
+    input {
+      margin: 5px 0;
       padding: 8px;
-      border-radius: 4px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      width: 100%;
+      box-sizing: border-box;
     }
-
-    #search input {
-      width: 200px;
-      padding: 5px;
-    }
-
-    #suggestions {
-      margin-top: 5px;
-      max-height: 150px;
-      overflow-y: auto;
-      background: white;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      position: absolute;
-      width: 200px;
-      display: none;
-    }
-
-    .suggestion {
-      padding: 5px;
-      cursor: pointer;
-    }
-
-    .suggestion:hover {
-      background: #eee;
-    }
-
-    #legend {
-        position: absolute;
-        bottom: 80px;
-        left: 10px;
-        z-index: 1000;
-        background: white;
-        padding: 10px;
-        border-radius: 4px;
-        box-shadow: 0 0 5px rgba(0,0,0,0.3);
-        font-family: sans-serif;
-        max-height: 40vh;
-        overflow-y: auto;
-    }
-
-    #legend h4 {
-      margin: 0 0 5px 0;
-      font-size: 14px;
-    }
-
-    #legend label {
-      display: block;
-      font-size: 13px;
-      margin-bottom: 4px;
-      cursor: pointer;
-    }
-    .leaflet-control-layers {
-    max-height: 30vh;
-    overflow-y: auto;
-    font-size: 14px;
+    button {
+      padding: 8px 16px;
     }
   </style>
 </head>
 <body>
-
-  <div id="search">
-    <input type="text" id="searchInput" placeholder="Search..." autocomplete="off" />
-    <div id="suggestions"></div>
+  <div id="login-box">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="authenticate()">Login</button>
+    <p id="error" style="color:red;"></p>
   </div>
-
-  <div id="map"></div>
-
-  <div id="legend">
-    <h4>Legend</h4>
-    <div id="legend-content"></div>
-  </div>
-
-  <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
   <script>
-    const map = L.map('map').setView([-24.9002, 133.9929], 5);
-    // Define multiple tile layers
-    const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-    });
+    async function sha256(str) {
+      const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
 
-    const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles © Esri'
-    });
+    async function authenticate() {
+      const userInput = document.getElementById("username").value;
+      const passInput = document.getElementById("password").value;
+      const hashedUser = await sha256(userInput);
+      const hashedPass = await sha256(passInput);
 
-    // Set default layer
-    osm.addTo(map);
+      const validUser = "1eadef6193ea73555f4f3d446cdc8e40ce7946921620d08e52b24bda8d1467cc";
+      const validPass = "76de047bbc51354b04f2a49d0263c138277f70f7f8c9e814b4f922336ed8bff0";
 
-    // Add layer control
-    const baseLayers = {
-    "OpenStreetMap": osm,
-    "Satellite (Esri)": satellite,
-    };
-
-    L.control.layers(baseLayers, null, {
-    position: 'bottomleft',
-    collapsed: false
-    }).addTo(map);
-
-
-
-    const input = document.getElementById('searchInput');
-    const suggestionsBox = document.getElementById('suggestions');
-    let markers = [];
-    const typeVisibility = {};
-    const typeToMarkers = {};
-
-    function getMarkerIconUrl(type) {
-      switch ((type || '').toUpperCase()) {
-        case 'CP': return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png';
-        case 'WP': return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png';
-        case 'RCP': return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png';
-        case 'NBN': return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png';
-        case 'WH': return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png';
-        default:   return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png';
+      if (hashedUser === validUser && hashedPass === validPass) {
+        // Redirect to your protected page
+        window.location.href = "home.html"; // replace with actual URL
+      } else {
+        document.getElementById("error").innerText = "Invalid credentials.";
       }
     }
-    function getVehicleIconUrl(type) {
-      switch ((type || '').toLowerCase()) {
-        case 'hilux':
-          return 'markers/hilux.png';
-        case 'truck':
-          return 'markers/truck.png';
-        case 'landcruiser':
-        case 'cruiser':
-          return 'markers/cruiser.png';
-        default:
-          return 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png';
-      }
-    }
-
-    let vehicleMarkers = [];
-
-    function loadVehiclePins() {
-
-
-      // Remove old ones if refreshing
-      vehicleMarkers.forEach(m => map.removeLayer(m));
-      vehicleMarkers = [];
-
-      fetch('track-dfs3d7.json?cacheBust=' + new Date().getTime())
-        .then(response => {
-          if (!response.ok) throw new Error("Failed to fetch track-dfs3d7.json");
-          return response.json();
-        })
-        .then(data => {
-          data.vehicles.forEach(vehicle => {
-            const popupContent = `
-              <strong>${vehicle.label}</strong><br/>
-              Updated: ${vehicle.timestamp}<br/>
-              Lat: ${vehicle.lat.toFixed(5)}<br/>
-              Lon: ${vehicle.lon.toFixed(5)}<br/>
-              Type: ${vehicle.type}
-            `;
-
-            const icon = L.icon({
-              iconUrl: getVehicleIconUrl(vehicle.type),
-              iconSize: [150, 68],
-              iconAnchor: [75, 34],
-              popupAnchor: [0, 0]
-            });
-
-            const marker = L.marker([vehicle.lat, vehicle.lon], { icon })
-              .addTo(map)
-              .bindPopup(popupContent);
-
-            vehicleMarkers.push(marker);
-          });
-        })
-        .catch(error => {
-          console.error("Vehicle marker load error:", error);
-        });
-    }
-
-    function loadPins() {
-      markers.forEach(m => map.removeLayer(m));
-      markers = [];
-      Object.keys(typeToMarkers).forEach(type => delete typeToMarkers[type]);
-
-      fetch('track-8f93d7.json?cacheBust=' + new Date().getTime())
-        .then(response => {
-          if (!response.ok) throw new Error("Failed to fetch track-8f93d7.json");
-          return response.json();
-        })
-        .then(data => {
-          const legendTypes = new Set();
-
-          data.pins.forEach(pin => {
-            const type = (pin.type || 'Unknown').toUpperCase();
-            legendTypes.add(type);
-
-            const popupContent = `
-              <strong>${pin.label}</strong><br/>
-              Lat: ${pin.lat.toFixed(5)}<br/>
-              Lon: ${pin.lon.toFixed(5)}<br/>
-              Type: ${type}
-            `;
-
-            const markerIcon = L.icon({
-              iconUrl: getMarkerIconUrl(type),
-              iconSize: [25, 41],
-              iconAnchor: [12, 41],
-              popupAnchor: [1, -34],
-              shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-              shadowSize: [41, 41]
-            });
-
-            const marker = L.marker([pin.lat, pin.lon], { icon: markerIcon })
-              .bindPopup(popupContent);
-            marker.pinLabel = pin.label;
-
-            if (!typeToMarkers[type]) {
-              typeToMarkers[type] = [];
-              if (typeof typeVisibility[type] === 'undefined') {
-                typeVisibility[type] = true;
-              }
-            }
-
-            typeToMarkers[type].push(marker);
-
-            if (typeVisibility[type]) {
-              marker.addTo(map);
-            }
-
-            markers.push(marker);
-          });
-
-          buildLegend([...legendTypes]);
-          updateSuggestions(input.value);
-        })
-        .catch(error => {
-          console.error("Failed to load pins.json:", error);
-        });
-    }
-    loadVehiclePins();
-    setInterval(loadVehiclePins, 60 * 1000);
-
-    function buildLegend(types) {
-      const legendDiv = document.getElementById('legend-content');
-      legendDiv.innerHTML = '';
-
-      // Normal pin types
-      types.sort().forEach(type => {
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.checked = typeVisibility[type];
-        checkbox.id = `legend-${type}`;
-        checkbox.onchange = () => toggleType(type, checkbox.checked);
-
-        const label = document.createElement('label');
-        label.htmlFor = `legend-${type}`;
-        label.innerHTML = `<span style="display:inline-block;width:10px;height:14px;background:url('${getMarkerIconUrl(type)}') no-repeat center center; background-size:contain; margin-right:6px;"></span>${type}`;
-
-        label.prepend(checkbox);
-        legendDiv.appendChild(label);
-      });
-
-      // VEHICLE toggle
-      const vehicleToggle = document.createElement('input');
-      vehicleToggle.type = 'checkbox';
-      vehicleToggle.checked = true;
-      vehicleToggle.id = 'legend-vehicles';
-      vehicleToggle.onchange = () => toggleVehicles(vehicleToggle.checked);
-
-      const vehicleLabel = document.createElement('label');
-      vehicleLabel.htmlFor = 'legend-vehicles';
-      vehicleLabel.innerHTML = `<span style="display:inline-block;width:10px;height:14px;background:url('markers/truck.png') no-repeat center center; background-size:contain; margin-right:6px;"></span>Vehicles`;
-
-      vehicleLabel.prepend(vehicleToggle);
-      legendDiv.appendChild(vehicleLabel);
-    }
-
-
-    function toggleType(type, isVisible) {
-      typeVisibility[type] = isVisible;
-      (typeToMarkers[type] || []).forEach(marker => {
-        if (isVisible) {
-          marker.addTo(map);
-        } else {
-          map.removeLayer(marker);
-        }
-      });
-    }
-    function toggleVehicles(isVisible) {
-      vehicleMarkers.forEach(marker => {
-        if (isVisible) {
-          marker.addTo(map);
-        } else {
-          map.removeLayer(marker);
-        }
-      });
-    }
-
-
-    function updateSuggestions(query) {
-      const lowerQuery = query.toLowerCase().trim();
-      suggestionsBox.innerHTML = '';
-
-      if (!lowerQuery) {
-        suggestionsBox.style.display = 'none';
-        return;
-      }
-
-      const matches = markers.filter(m => m.pinLabel.toLowerCase().includes(lowerQuery));
-
-      if (matches.length === 0) {
-        suggestionsBox.style.display = 'none';
-        return;
-      }
-
-      matches.forEach(marker => {
-        const div = document.createElement('div');
-        div.className = 'suggestion';
-        div.textContent = marker.pinLabel;
-
-        div.onclick = () => {
-          map.setView(marker.getLatLng(), 15);
-          marker.openPopup();
-          suggestionsBox.innerHTML = '';
-          suggestionsBox.style.display = 'none';
-          input.value = marker.pinLabel;
-        };
-
-        suggestionsBox.appendChild(div);
-      });
-
-      suggestionsBox.style.display = 'block';
-    }
-
-    input.addEventListener('input', () => {
-      updateSuggestions(input.value);
-    });
-
-    document.addEventListener('click', (e) => {
-      if (!document.getElementById('search').contains(e.target)) {
-        suggestionsBox.style.display = 'none';
-      }
-    });
-
-    loadPins();
-    setInterval(loadPins, 60 * 1000);
   </script>
-
 </body>
 </html>
