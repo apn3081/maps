@@ -48,10 +48,10 @@
     .suggestion:hover {
       background: #eee;
     }
-    
+
     #legend {
         position: absolute;
-        bottom: 120px;
+        bottom: 80px;
         left: 10px;
         z-index: 1000;
         background: white;
@@ -105,16 +105,8 @@
     attribution: '&copy; OpenStreetMap contributors'
     });
 
-    const topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data © OpenTopoMap, SRTM'
-    });
-
     const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     attribution: 'Tiles © Esri'
-    });
-
-    const terrain = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg', {
-    attribution: 'Map tiles by Stamen Design, under CC BY 3.0'
     });
 
     // Set default layer
@@ -123,9 +115,7 @@
     // Add layer control
     const baseLayers = {
     "OpenStreetMap": osm,
-    "Topo Map": topo,
     "Satellite (Esri)": satellite,
-    "Terrain (Stamen)": terrain
     };
 
     L.control.layers(baseLayers, null, {
