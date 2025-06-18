@@ -141,6 +141,61 @@
         default:   return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png';
       }
     }
+    function getVehicleIconUrl(type) {
+      switch ((type || '').toLowerCase()) {
+        case 'hilux':
+          return 'markers/hilux.png';
+        case 'truck':
+          return 'markers/truck.png';
+        case 'landcruiser':
+        case 'cruiser':
+          return 'markers/cruiser.png';
+        default:
+          return 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png';
+      }
+    }
+
+    let vehicleMarkers = [];
+
+    function loadVehiclePins() {
+
+
+      // Remove old ones if refreshing
+      vehicleMarkers.forEach(m => map.removeLayer(m));
+      vehicleMarkers = [];
+
+      fetch('track-dfs3d7.json?cacheBust=' + new Date().getTime())
+        .then(response => {
+          if (!response.ok) throw new Error("Failed to fetch track-dfs3d7.json");
+          return response.json();
+        })
+        .then(data => {
+          data.vehicles.forEach(vehicle => {
+            const popupContent = `
+              <strong>${vehicle.label}</strong><br/>
+              Lat: ${vehicle.lat.toFixed(5)}<br/>
+              Lon: ${vehicle.lon.toFixed(5)}<br/>
+              Type: ${vehicle.type}
+            `;
+
+            const icon = L.icon({
+              iconUrl: getVehicleIconUrl(vehicle.type),
+              iconSize: [150, 68],      // ← Bigger icons
+              iconAnchor: [150, 68],    // ← Adjust anchor to match size
+              popupAnchor: [0, 0]
+            });
+
+            const marker = L.marker([vehicle.lat, vehicle.lon], { icon })
+              .addTo(map)
+              .bindPopup(popupContent);
+
+            vehicleMarkers.push(marker);
+          });
+        })
+        .catch(error => {
+          console.error("Vehicle marker load error:", error);
+        });
+    }
 
     function loadPins() {
       markers.forEach(m => map.removeLayer(m));
@@ -202,11 +257,14 @@
           console.error("Failed to load pins.json:", error);
         });
     }
+    loadVehiclePins();
+    setInterval(loadVehiclePins, 60 * 1000);
 
     function buildLegend(types) {
       const legendDiv = document.getElementById('legend-content');
       legendDiv.innerHTML = '';
 
+      // Normal pin types
       types.sort().forEach(type => {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
@@ -221,7 +279,22 @@
         label.prepend(checkbox);
         legendDiv.appendChild(label);
       });
+
+      // VEHICLE toggle
+      const vehicleToggle = document.createElement('input');
+      vehicleToggle.type = 'checkbox';
+      vehicleToggle.checked = true;
+      vehicleToggle.id = 'legend-vehicles';
+      vehicleToggle.onchange = () => toggleVehicles(vehicleToggle.checked);
+
+      const vehicleLabel = document.createElement('label');
+      vehicleLabel.htmlFor = 'legend-vehicles';
+      vehicleLabel.innerHTML = `<span style="display:inline-block;width:10px;height:14px;background:url('markers/truck.png') no-repeat center center; background-size:contain; margin-right:6px;"></span>Vehicles`;
+
+      vehicleLabel.prepend(vehicleToggle);
+      legendDiv.appendChild(vehicleLabel);
     }
+
 
     function toggleType(type, isVisible) {
       typeVisibility[type] = isVisible;
@@ -233,6 +306,16 @@
         }
       });
     }
+    function toggleVehicles(isVisible) {
+      vehicleMarkers.forEach(marker => {
+        if (isVisible) {
+          marker.addTo(map);
+        } else {
+          map.removeLayer(marker);
+        }
+      });
+    }
+
 
     function updateSuggestions(query) {
       const lowerQuery = query.toLowerCase().trim();
