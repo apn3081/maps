@@ -48,17 +48,19 @@
     .suggestion:hover {
       background: #eee;
     }
-
+    
     #legend {
-      position: absolute;
-      bottom: 120px;
-      left: 10px;
-      z-index: 1000;
-      background: white;
-      padding: 10px;
-      border-radius: 4px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.3);
-      font-family: sans-serif;
+        position: absolute;
+        bottom: 120px;
+        left: 10px;
+        z-index: 1000;
+        background: white;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        font-family: sans-serif;
+        max-height: 40vh; /* NEW */
+        overflow-y: auto;  /* NEW */
     }
 
     #legend h4 {
@@ -71,6 +73,11 @@
       font-size: 13px;
       margin-bottom: 4px;
       cursor: pointer;
+    }
+    .leaflet-control-layers {
+    max-height: 30vh;
+    overflow-y: auto;
+    font-size: 14px;
     }
   </style>
 </head>
