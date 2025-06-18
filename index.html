@@ -173,6 +173,7 @@
           data.vehicles.forEach(vehicle => {
             const popupContent = `
               <strong>${vehicle.label}</strong><br/>
+              Updated: ${vehicle.timestamp}<br/>
               Lat: ${vehicle.lat.toFixed(5)}<br/>
               Lon: ${vehicle.lon.toFixed(5)}<br/>
               Type: ${vehicle.type}
@@ -180,8 +181,8 @@
 
             const icon = L.icon({
               iconUrl: getVehicleIconUrl(vehicle.type),
-              iconSize: [150, 68],      // ← Bigger icons
-              iconAnchor: [150, 68],    // ← Adjust anchor to match size
+              iconSize: [150, 68],
+              iconAnchor: [75, 34],
               popupAnchor: [0, 0]
             });
 
