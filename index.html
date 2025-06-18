@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Map with Search</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <style>
+    body { margin: 0; padding: 0; }
+    #map { width: 100%; height: 100vh; }
+
+    #search {
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      z-index: 1000;
+      background: white;
+      padding: 8px;
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+
+    #search input {
+      width: 200px;
+      padding: 5px;
+    }
+
+    #suggestions {
+      margin-top: 5px;
+      max-height: 150px;
+      overflow-y: auto;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      position: absolute;
+      width: 200px;
+      display: none;
+    }
+
+    .suggestion {
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    .suggestion:hover {
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="search">
+    <input type="text" id="searchInput" placeholder="Search pins..." autocomplete="off" />
+    <div id="suggestions"></div>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script>
+    const map = L.map('map').setView([-24.900209941653188, 133.99290092665741], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    const input = document.getElementById('searchInput');
+    const suggestionsBox = document.getElementById('suggestions');
+    let markers = [];
+
+    // pins.json contains all location data
+    fetch('pins.json')
+    .then(response => response.json())
+    .then(data => {
+        data.pins.forEach(pin => {
+        const popupContent = `
+            <strong>${pin.label}</strong><br/>
+            Lat: ${pin.lat.toFixed(5)}<br/>
+            Lon: ${pin.lon.toFixed(5)}<br/>
+            Type: ${pin.type || 'Unknown'}
+        `;
+
+        // Choose marker colour based on type
+        const markerIcon = L.icon({
+            iconUrl: getMarkerIconUrl(pin.type),
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+            shadowSize: [41, 41]
+        });
+
+        const marker = L.marker([pin.lat, pin.lon], { icon: markerIcon })
+            .addTo(map)
+            .bindPopup(popupContent);
+
+        marker.pinLabel = pin.label;
+        markers.push(marker);
+        });
+    });
+
+    // Set marker colours
+    function getMarkerIconUrl(type) {
+    switch ((type || '').toUpperCase()) {
+        case 'CP':
+        return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png';
+        case 'WP':
+        return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png';
+        case 'RCP':
+        return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png';
+        case 'NBN':
+        return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png';
+        case 'WH':
+        return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png';
+        default:
+        return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png';
+        }
+    }
+
+    function updateSuggestions(query) {
+      const lowerQuery = query.toLowerCase().trim();
+      suggestionsBox.innerHTML = '';
+
+      if (!lowerQuery) {
+        suggestionsBox.style.display = 'none';
+        return;
+      }
+
+      const matches = markers.filter(m => m.pinLabel.toLowerCase().includes(lowerQuery));
+
+      if (matches.length === 0) {
+        suggestionsBox.style.display = 'none';
+        return;
+      }
+
+      matches.forEach(marker => {
+        const div = document.createElement('div');
+        div.className = 'suggestion';
+        div.textContent = marker.pinLabel;
+
+        div.onclick = () => {
+          map.setView(marker.getLatLng(), 15);
+          marker.openPopup();
+          suggestionsBox.innerHTML = '';
+          suggestionsBox.style.display = 'none';
+          input.value = marker.pinLabel;
+        };
+
+        suggestionsBox.appendChild(div);
+      });
+
+      suggestionsBox.style.display = 'block';
+    }
+
+    input.addEventListener('input', () => {
+      updateSuggestions(input.value);
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!document.getElementById('search').contains(e.target)) {
+        suggestionsBox.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
