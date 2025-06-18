@@ -1,7 +1,7 @@
 {
   "pins": [
     { "label": "Site2", "lat": -37.8136, "lon": 140.9631, "type": "WP" },
-    { "label": "Site1", "lat": -37.8200, "lon": 144.9800, "type": "RCP" },
+    { "label": "Site1", "lat": -31.8200, "lon": 144.9800, "type": "RCP" },
     { "label": "Site3", "lat": -37.8200, "lon": 143.9800, "type": "CP"  },
     { "label": "Site4", "lat": -33.8200, "lon": 141.9800, "type": "WH"  }
   ]

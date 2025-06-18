@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /track-8f93d7.json
