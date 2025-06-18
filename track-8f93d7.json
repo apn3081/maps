@@ -1,8 +1,3388 @@
 {
   "pins": [
-    { "label": "Site2", "lat": -37.8136, "lon": 140.9631, "type": "WP" },
-    { "label": "Site1", "lat": -31.8200, "lon": 144.9800, "type": "RCP" },
-    { "label": "Site3", "lat": -37.8200, "lon": 143.9800, "type": "CP"  },
-    { "label": "Site4", "lat": -33.8200, "lon": 141.9800, "type": "WH"  }
+    {
+      "label": "CP - Adelaide Bore 08 8956 9076",
+      "lat": -22.214675,
+      "lon": 133.936675,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Alpurrurulam 07 4748 3028",
+      "lat": -20.985403,
+      "lon": 137.844803,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Alpurrurulam 07 4748 3053",
+      "lat": -20.985594,
+      "lon": 137.849747,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Alpurrurulam 07 4748 3071",
+      "lat": -20.981419,
+      "lon": 137.846756,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Alpurrurulam 07 4748 3176",
+      "lat": -20.985558,
+      "lon": 137.849092,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Amangal 08 8976 7290",
+      "lat": -13.2437583,
+      "lon": 131.1033648,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Amengernterneah 08 8956 9641",
+      "lat": -21.8989591,
+      "lon": 134.8429206,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ampilatwatja 08 8956 9015 [REMOVED]",
+      "lat": -21.6544028,
+      "lon": 135.2241222,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ampilatwatja 08 8956 9017",
+      "lat": -21.65911111,
+      "lon": 135.2248528,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ampilatwatja 08 8956 9018",
+      "lat": -21.65823611,
+      "lon": 135.2270361,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ankerrapw Homestead 08 8956 9038",
+      "lat": -22.229439,
+      "lon": 134.562042,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Aper-Alwerrknge 08 8953 7526 [Disconnected]",
+      "lat": -23.668472,
+      "lon": 133.870728,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Araru Point 08 8979 0329",
+      "lat": -11.192564,
+      "lon": 131.878189,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Arawerr 08 8956 9021",
+      "lat": -22.012964,
+      "lon": 134.846725,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Areyonga 08 8955 8312",
+      "lat": -24.0757162,
+      "lon": 132.271072,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Areyonga 08 8955 8316",
+      "lat": -24.07336667,
+      "lon": 132.2693944,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Arlparra 08 8956 9022",
+      "lat": -22.08658333,
+      "lon": 134.7758944,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Arrilljhere 08 8955 0816",
+      "lat": -23.77953,
+      "lon": 133.62587,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Artekerre 08 8956 9063",
+      "lat": -22.290358,
+      "lon": 134.542953,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Atheley 08 8956 9023",
+      "lat": -21.91753611,
+      "lon": 134.8674,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Atnwengerrpe 08 8956 9037",
+      "lat": -21.870839,
+      "lon": 134.994475,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Balgo 08 9168 8459",
+      "lat": -20.142033,
+      "lon": 127.983017,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Balgo 08 9168 8461",
+      "lat": -20.133997,
+      "lon": 127.987075,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Balgo 08 9168 8462",
+      "lat": -20.145322,
+      "lon": 127.985986,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Balgo 08 9168 8463",
+      "lat": -20.14206667,
+      "lon": 127.9812306,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Balgo 08 9168 8465",
+      "lat": -20.143703,
+      "lon": 127.986953,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Banana Wells 08 9192 4672",
+      "lat": -16.98708,
+      "lon": 122.57592,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Bardi 08 9192 4381 [Disconnected]",
+      "lat": -16.44411,
+      "lon": 123.05859,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Bardi 08 9192 4394 [Disconnected]",
+      "lat": -16.44531,
+      "lon": 123.06356,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Bardi 08 9192 4396 [Disconnected]",
+      "lat": -16.44611,
+      "lon": 123.05865,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Beagle Bay 08 9192 4579",
+      "lat": -16.986839,
+      "lon": 122.662819,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Beagle Bay 08 9192 4586",
+      "lat": -16.981456,
+      "lon": 122.664756,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Betts Corner 08 8625 3835",
+      "lat": -32.08965278,
+      "lon": 133.6194444,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Bidyadanga 08 9192 4587",
+      "lat": -18.684636,
+      "lon": 121.778258,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Bidyadanga 08 9192 4605",
+      "lat": -18.683736,
+      "lon": 121.777472,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Bidyadanga 08 9192 4607",
+      "lat": -18.683686,
+      "lon": 121.775436,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Bidyadanga 08 9192 4609",
+      "lat": -18.68668,
+      "lon": 121.7751,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Bidyadanga 08 9192 4610",
+      "lat": -18.685389,
+      "lon": 121.774178,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Blackwater 08 8956 8531",
+      "lat": -23.261842,
+      "lon": 131.896867,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Bobieding 08 9192 4613",
+      "lat": -16.97399772,
+      "lon": 122.633714,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Budgargoon 08 9193 7528",
+      "lat": -17.95013,
+      "lon": 122.24487,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Bunghungura 08 8987 3576",
+      "lat": -12.374381,
+      "lon": 135.72235,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Burt Creek 08 8956 9094",
+      "lat": -23.19708611,
+      "lon": 133.7476361,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Bygnunn Djoodoon 08 9192 4359",
+      "lat": -16.52465,
+      "lon": 122.996933,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Camel Camp 08 8956 9048",
+      "lat": -22.272028,
+      "lon": 134.552431,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Camels Hump 08 8956 7719",
+      "lat": -23.75203,
+      "lon": 131.5942,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Canteen Creek 08 8964 1650",
+      "lat": -20.64475,
+      "lon": 135.586181,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Chilli Creek 08 9192 4372",
+      "lat": -16.5323,
+      "lon": 122.8735,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Cockatoo Springs 08 9167 8315",
+      "lat": -15.947283,
+      "lon": 128.951844,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Crocodile Hole 08 9167 8308",
+      "lat": -16.642639,
+      "lon": 128.140839,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Dhambala 08 8970 5147",
+      "lat": -12.0526,
+      "lon": 135.5609,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Djaradjung 08 9192 4385",
+      "lat": -16.561472,
+      "lon": 122.962325,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Djarindjin 08 9192 4423 [Disconnected]",
+      "lat": -16.513517,
+      "lon": 122.894067,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Djarindjin 08 9192 4426",
+      "lat": -16.514917,
+      "lon": 122.895417,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Djarindjin 08 9192 4436",
+      "lat": -16.514258,
+      "lon": 122.896867,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Djarindjin 08 9192 4437",
+      "lat": -16.513611,
+      "lon": 122.897064,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Djarindjin 08 9192 4438",
+      "lat": -16.514611,
+      "lon": 122.895561,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Elliott North Camp 08 8969 2137",
+      "lat": -17.550194,
+      "lon": 133.536225,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Emu Creek 08 9169 2957",
+      "lat": -15.814347,
+      "lon": 128.7901,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Engawala 08 8956 9025",
+      "lat": -22.8028611,
+      "lon": 134.4542389,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Engawala 08 8956 9026",
+      "lat": -22.80254444,
+      "lon": 134.4564056,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Finke 08 8956 0449",
+      "lat": -25.58070833,
+      "lon": 134.57611111,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Finke 08 8956 0451",
+      "lat": -25.581211,
+      "lon": 134.577042,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Finke 08 8956 0452",
+      "lat": -25.581644,
+      "lon": 134.578719,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Flywell 08 9168 5905",
+      "lat": -18.2995,
+      "lon": 127.6054,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Fossil Head 08 8978 1247",
+      "lat": -14.5376291,
+      "lon": 129.520847,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Frog Hollow 08 9167 8310",
+      "lat": -17.275247,
+      "lon": 128.051942,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Galadjapin 08 8979 0714",
+      "lat": -12.28671,
+      "lon": 134.81763,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Gilllian Bore 08 8956 9245",
+      "lat": -23.06509167,
+      "lon": 133.6947167,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Glen Hill 08 9167 8312",
+      "lat": -16.545464,
+      "lon": 128.359239,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Glen Hill 08 9167 8314",
+      "lat": -16.543858,
+      "lon": 128.358108,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Gudumul 08 9192 4627",
+      "lat": -16.706542,
+      "lon": 123.133728,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Guda Guda 08 9161 1904",
+      "lat": -15.5336,
+      "lon": 128.1923,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Gullaweed 08 9192 4416",
+      "lat": -16.3972413,
+      "lon": 123.0234866,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Haasts Bluff 08 8964 7023",
+      "lat": -23.4477361,
+      "lon": 131.8822333,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Haasts Bluff 08 8964 7156",
+      "lat": -23.44809722,
+      "lon": 131.8813778,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Harts Range 08 8956 9027",
+      "lat": -22.98669722,
+      "lon": 134.9339306,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Hidden Valley 08 8952 6907",
+      "lat": -23.71134444,
+      "lon": 133.8983917,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Hidden Valley 08 8952 7637",
+      "lat": -23.70714167,
+      "lon": 133.898575,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Hidden Valley 08 8952 8901",
+      "lat": -23.712656,
+      "lon": 133.901658,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Hollow Springs 08 9167 8325",
+      "lat": -15.864581,
+      "lon": 128.853531,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Honeymoon Beach 08 9161 4676",
+      "lat": -14.1046607,
+      "lon": 126.6805338,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ilawuru 08 8964 5512",
+      "lat": -19.030864,
+      "lon": 136.650208,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ilparpa 08 8953 6945",
+      "lat": -23.7657,
+      "lon": 133.8706,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ilperle Tyathe 08 8953 7647 [Disconnected]",
+      "lat": -23.66525,
+      "lon": 133.86055,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ilyperenye 08 8953 7649 [Disconnected]",
+      "lat": -23.7436222,
+      "lon": 133.8710944,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Imanpa 08 8954 9153",
+      "lat": -25.1341,
+      "lon": 132.5679778,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Inkawenyerre 08 8956 9040",
+      "lat": -21.81958611,
+      "lon": 134.8472139,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ipolera 08 8955 8239",
+      "lat": -23.98805,
+      "lon": 132.37355,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Irrerlirre 08 8956 9030",
+      "lat": -22.8444111,
+      "lon": 135.1338361,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Irrmanne 08 8956 6369",
+      "lat": -21.653128,
+      "lon": 136.394425,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Irrultja 08 8956 9036",
+      "lat": -21.98034167,
+      "lon": 135.1102,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Jabir Jabir 08 9192 4615",
+      "lat": -17.1926,
+      "lon": 122.3717,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Jarra Jarra 08 8964 1637",
+      "lat": -20.847375,
+      "lon": 133.221283,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Jimbilum 08 9169 2961",
+      "lat": -15.873147,
+      "lon": 128.701294,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kaltukatjara 08 8955 8245",
+      "lat": -24.87348611,
+      "lon": 129.08345,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kaltukatjara 08 8955 8246",
+      "lat": -24.87413056,
+      "lon": 129.0855722,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kaltukatjara 08 8955 8247",
+      "lat": -24.873256,
+      "lon": 129.083008,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kalumburu 08 9161 4621",
+      "lat": -14.2969,
+      "lon": 126.641,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kalumburu 08 9161 4623",
+      "lat": -14.295556,
+      "lon": 126.6425,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kalumpurlpa 08 8964 4754",
+      "lat": -19.003231,
+      "lon": 133.918442,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kapalga 08 8979 3108",
+      "lat": -12.698928,
+      "lon": 132.371003,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kaporilya 08 8956 7771",
+      "lat": -23.93931667,
+      "lon": 132.7200611,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Karguru Town Camp 08 8962 3436",
+      "lat": -19.657772,
+      "lon": 134.198958,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Karnte 08 8953 7189",
+      "lat": -23.765025,
+      "lon": 133.8641667,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kemerne Bore 08 8956 9074",
+      "lat": -23.305375,
+      "lon": 134.0691972,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Koongawa Dundey 08 8625 3571",
+      "lat": -32.08697222,
+      "lon": 133.7519694,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Koongie Park 08 9168 5950",
+      "lat": -18.338356,
+      "lon": 127.536864,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Koongie Park 08 9168 5951",
+      "lat": -18.337303,
+      "lon": 127.537681,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kundat Djaru 08 9168 8452",
+      "lat": -18.794561,
+      "lon": 128.614564,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kundat Djaru 08 9168 8453",
+      "lat": -18.794711,
+      "lon": 128.615525,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kundat Djaru 08 9168 8454",
+      "lat": -18.793256,
+      "lon": 128.615844,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kurntapurra 08 8964 4785",
+      "lat": -19.391242,
+      "lon": 135.397689,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Kuy 08 8978 2956",
+      "lat": -14.0352774,
+      "lon": 129.5982124,
+      "type": "CP"
+    },
+    {
+      "label": "CP - La Djardarr Bay 08 9192 4617",
+      "lat": -16.882342,
+      "lon": 123.149156,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Lamboo Station 08 9168 8456",
+      "lat": -18.46292,
+      "lon": 127.35034,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Laramba 08 8964 7158",
+      "lat": -22.535064,
+      "lon": 132.753342,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Laramba 08 8964 7159",
+      "lat": -22.532744,
+      "lon": 132.756669,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Linga 08 9168 5903",
+      "lat": -18.4069,
+      "lon": 127.895,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Lombadina 08 9192 4468",
+      "lat": -16.51684,
+      "lon": 122.89438,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Loumard 08 9192 4390",
+      "lat": -16.5741,
+      "lon": 122.8369,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ltira Outstation 08 8955 8206",
+      "lat": -24.0575143,
+      "lon": 132.9018671,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Lundja 08 9168 5893",
+      "lat": -18.211175,
+      "lon": 127.6689,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Maddarr 08 9192 4618",
+      "lat": -16.8175,
+      "lon": 123.160828,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mallinbar 08 9192 6916 [REMOVED]",
+      "lat": -17.957219,
+      "lon": 122.243294,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Manaburduma 08 8979 3263",
+      "lat": -12.666294,
+      "lon": 132.843047,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mardiwa Loop 08 9168 5908",
+      "lat": -18.20591,
+      "lon": 127.65657,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mardiwa Loop 08 9168 5915",
+      "lat": -18.209392,
+      "lon": 127.655377,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mardiwa Loop 08 9168 5916",
+      "lat": -18.21146111,
+      "lon": 127.6619556,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Marlinja 08 8964 4756",
+      "lat": -17.369786,
+      "lon": 133.402833,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Marlinja 08 8964 4758",
+      "lat": -17.370992,
+      "lon": 133.402436,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mbunghara 08 8964 7160",
+      "lat": -23.289678,
+      "lon": 132.360122,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Merrepen 08 8978 2395",
+      "lat": -14.2218648,
+      "lon": 129.9673143,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Milargoon 08 9192 4415",
+      "lat": -16.7787242,
+      "lon": 122.5830107,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Milikapiti 08 8970 9349",
+      "lat": -11.422625,
+      "lon": 130.673858,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Milikapiti 08 8970 9350",
+      "lat": -11.420717,
+      "lon": 130.672333,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Milikapiti 08 8970 9351",
+      "lat": -11.424383,
+      "lon": 130.675828,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Milikapiti 08 8970 9353",
+      "lat": -11.423861,
+      "lon": 130.675475,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mindibungu 08 9168 8472",
+      "lat": -19.5556723,
+      "lon": 127.660094,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mindibungu 08 9168 8473",
+      "lat": -19.554778,
+      "lon": 127.6634557,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mindibungu 08 9168 8474",
+      "lat": -19.555653,
+      "lon": 127.663636,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mirima 08 9169 2843",
+      "lat": -15.76151,
+      "lon": 128.7363,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mirima 08 9169 2856",
+      "lat": -15.760561,
+      "lon": 128.736175,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mirima 08 9169 2873",
+      "lat": -15.758117,
+      "lon": 128.739839,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mirima 08 9169 2874",
+      "lat": -15.758489,
+      "lon": 128.740264,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mirima 08 9169 2876",
+      "lat": -15.757864,
+      "lon": 128.741883,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mount Jean 08 8975 4894",
+      "lat": -13.53288,
+      "lon": 134.1721,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mud Springs 08 9169 2894",
+      "lat": -15.880033,
+      "lon": 128.771286,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mudnunn 08 9192 4389",
+      "lat": -16.527711,
+      "lon": 122.981444,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mudnunn 08 9192 4506",
+      "lat": -16.5275685,
+      "lon": 122.9826479,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mulan 08 9168 8475",
+      "lat": -20.102331,
+      "lon": 127.595842,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mulan 08 9168 8476",
+      "lat": -20.099017,
+      "lon": 127.593658,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mulan 08 9168 8478",
+      "lat": -20.102889,
+      "lon": 127.595322,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mulga Bore 08 8956 9031",
+      "lat": -22.45256111,
+      "lon": 134.2103278,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mungkarta 08 8964 1634",
+      "lat": -20.337311,
+      "lon": 134.198242,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Muntji-Mala 08 8962 3974",
+      "lat": -19.647247,
+      "lon": 134.18225,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nemarluk 08 8978 2404",
+      "lat": -14.24104,
+      "lon": 130.00308,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ngamakoon 08 9192 4386",
+      "lat": -16.447358,
+      "lon": 122.917206,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ngankiritja Outstation 08 8956 8819",
+      "lat": -23.46419722,
+      "lon": 131.8798972,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ngarlan 08 9192 4586",
+      "lat": -16.986792,
+      "lon": 122.664756,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nguiu 08 8970 9341 [REMOVED]",
+      "lat": -11.758381,
+      "lon": 130.634828,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nguiu 08 8970 9342",
+      "lat": -11.760531,
+      "lon": 130.638183,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nguiu 08 8970 9346",
+      "lat": -11.756933,
+      "lon": 130.637086,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nguiu 08 8970 9347",
+      "lat": -11.765442,
+      "lon": 130.634506,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nguiu 08 8970 9348",
+      "lat": -11.761844,
+      "lon": 130.62645,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nicholson Block 08 9168 5907",
+      "lat": -18.2381,
+      "lon": 127.675,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nturiya 08 8956 9473",
+      "lat": -22.124842,
+      "lon": 133.264908,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nturiya 08 8956 9562",
+      "lat": -22.122197,
+      "lon": 133.267228,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nyirripi 08 8964 7042",
+      "lat": -22.648792,
+      "lon": 130.552903,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nyirripi 08 8964 7170",
+      "lat": -22.649789,
+      "lon": 130.552278,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nyirripi 08 8964 7173",
+      "lat": -22.649817,
+      "lon": 130.554306,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Nyumwah 08 9192 4502",
+      "lat": -16.557311,
+      "lon": 122.982758,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Old Mission 08 8978 1235",
+      "lat": -14.1295613,
+      "lon": 129.4981341,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Papunya 08 8964 7024",
+      "lat": -23.2023921,
+      "lon": 131.9114457,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Papunya 08 8964 7026",
+      "lat": -23.204464,
+      "lon": 131.909378,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Papunya 08 8964 7178",
+      "lat": -23.201503,
+      "lon": 131.909058,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Papunya 08 8964 7025 [REMOVED]",
+      "lat": -23.2035247,
+      "lon": 131.9113172,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Paru 08 8970 9074",
+      "lat": -11.7481,
+      "lon": 130.643,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Pirlangimpi 08 8970 9354 [REMOVED]",
+      "lat": -11.402858,
+      "lon": 130.418214,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Pirlangimpi 08 8970 9356",
+      "lat": -11.403533,
+      "lon": 130.417739,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Pirlangimpi 08 8970 9357",
+      "lat": -11.405508,
+      "lon": 130.417464,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Pirlangimpi 08 8970 9358",
+      "lat": -11.406397,
+      "lon": 130.416275,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Pirlangimpi 08 8970 9359",
+      "lat": -11.407397,
+      "lon": 130.416839,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Pulardi 08 8964 7174",
+      "lat": -22.563367,
+      "lon": 132.380219,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Santa Teresa 08 8956 0408",
+      "lat": -24.13032222,
+      "lon": 134.3728028,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Santa Teresa 08 8956 0426",
+      "lat": -24.13004722,
+      "lon": 134.37175,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Santa Teresa 08 8956 0432",
+      "lat": -24.1321139,
+      "lon": 134.3729861,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Snake Well 08 8956 9058",
+      "lat": -23.16099722,
+      "lon": 133.9169778,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Tappers Inlet 08 9192 4623",
+      "lat": -16.8109,
+      "lon": 122.556,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Tara 08 8956 9648",
+      "lat": -21.506819,
+      "lon": 133.996017,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Taracumbie 08 8970 9361",
+      "lat": -11.6079974,
+      "lon": 130.7116089,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ti Tree 08 8956 9682",
+      "lat": -22.207392,
+      "lon": 133.431122,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ti Tree 08 8956 9683",
+      "lat": -22.208869,
+      "lon": 133.431183,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Tingkkarli 08 8962 2869",
+      "lat": -19.636961,
+      "lon": 134.203797,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Tirralintji 08 9191 7038",
+      "lat": -17.196103,
+      "lon": 126.435386,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Tnyimipurita 08 8954 9173",
+      "lat": -23.88781111,
+      "lon": 132.6709139,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Tommy Hawk Swamp 08 8956 9061",
+      "lat": -22.194339,
+      "lon": 134.592772,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Tywenpe C 08 8955 0396",
+      "lat": -23.74435556,
+      "lon": 133.6868444,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ukaka 08 8955 8321 [Disconnected]",
+      "lat": -24.592436,
+      "lon": 132.373306,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Ukaka 08 8955 8324",
+      "lat": -24.591892,
+      "lon": 132.373872,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Undarana 2A 08 8956 7768",
+      "lat": -23.75738056,
+      "lon": 132.1284944,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Violet Valley 08 9167 8725",
+      "lat": -17.219672,
+      "lon": 128.012742,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Wadapuli 08 8978 1271",
+      "lat": -14.2137468,
+      "lon": 129.8534833,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Wallace Rockhole 08 8955 8319",
+      "lat": -24.1245,
+      "lon": 133.0863,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Walungurru 08 8956 4938",
+      "lat": -23.275433,
+      "lon": 129.388231,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Walungurru 08 8956 8551",
+      "lat": -23.275236,
+      "lon": 129.388275,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Walungurru 08 8964 7031",
+      "lat": -23.2758,
+      "lon": 129.388656,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Walungurru 08 8964 7032",
+      "lat": -23.276889,
+      "lon": 129.391664,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Walungurru 08 8964 7034",
+      "lat": -23.274083,
+      "lon": 129.386886,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Warmun 08 9167 8316",
+      "lat": -17.031681,
+      "lon": 128.211839,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Warmun 08 9167 8317",
+      "lat": -17.03043,
+      "lon": 128.21186,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Warmun 08 9167 8318",
+      "lat": -17.02974,
+      "lon": 128.21617,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Warmun 08 9167 8319",
+      "lat": -17.025239,
+      "lon": 128.214753,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Warmun 08 9167 8320 [REMOVED]",
+      "lat": -17.0273713,
+      "lon": 128.2139746,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Warrayu 08 9161 1908",
+      "lat": -15.479178,
+      "lon": 128.120103,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Welere 08 8956 9059",
+      "lat": -22.02218,
+      "lon": 135.192,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Willowra 08 8964 7175",
+      "lat": -21.247344,
+      "lon": 132.609772,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Wilora 08 8956 9431",
+      "lat": -21.741061,
+      "lon": 133.73195,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Wilora 08 8956 9518",
+      "lat": -21.7419,
+      "lon": 133.730483,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Woolah Doon Doon 08 9167 8327",
+      "lat": -16.306561,
+      "lon": 128.246414,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Wuggunbun 08 9167 8321",
+      "lat": -15.955067,
+      "lon": 128.379167,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Wuggunbun 08 9167 8324",
+      "lat": -15.953344,
+      "lon": 128.379914,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Wuppa 08 8962 3960",
+      "lat": -19.637306,
+      "lon": 134.199311,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Wurankuwu 08 8970 9367",
+      "lat": -11.6174356,
+      "lon": 130.2767699,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Wutunugurra 08 8964 1635",
+      "lat": -20.463044,
+      "lon": 135.250428,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Yawuru 08 9192 8754",
+      "lat": -17.968803,
+      "lon": 122.291711,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Yuelamu 08 8964 7145 [Disconnected]",
+      "lat": -22.259378,
+      "lon": 132.205933,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Yuelamu 08 8964 7146 [Disconnected]",
+      "lat": -22.256247,
+      "lon": 132.207,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Yuendumu 08 8956 4226",
+      "lat": -22.255617,
+      "lon": 131.794739,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Yuendumu 08 8956 4236",
+      "lat": -22.255669,
+      "lon": 131.796631,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Yuendumu 08 8956 4246",
+      "lat": -22.254919,
+      "lon": 131.797683,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Yuendumu 08 8956 4249",
+      "lat": -22.256492,
+      "lon": 131.797011,
+      "type": "CP"
+    },
+    {
+      "label": "WH - Kiwirrkurra",
+      "lat": -22.816925,
+      "lon": 127.763808,
+      "type": "WH"
+    },
+    {
+      "label": "EK - Punmu",
+      "lat": -22.045586,
+      "lon": 123.122835,
+      "type": "EK"
+    },
+    {
+      "label": "EK - Orrtipa-Thurra",
+      "lat": -22.78952,
+      "lon": 136.168789,
+      "type": "EK"
+    },
+    {
+      "label": "EK - Mimbi",
+      "lat": -18.7268,
+      "lon": 126.0431,
+      "type": "EK"
+    },
+    {
+      "label": "EK - Windjana Gorge",
+      "lat": -17.415394,
+      "lon": 124.940875,
+      "type": "EK"
+    },
+    {
+      "label": "EK - Kunawarritji",
+      "lat": -22.329407,
+      "lon": 124.72705,
+      "type": "EK"
+    },
+    {
+      "label": "EK - Nepabunna",
+      "lat": -30.582576,
+      "lon": 138.978931,
+      "type": "EK"
+    },
+    {
+      "label": "EK - Jarlmadangah Burru Aboriginal",
+      "lat": -18.013963,
+      "lon": 124.010835,
+      "type": "EK"
+    },
+    {
+      "label": "EK - Kupungarri",
+      "lat": -16.7241166,
+      "lon": 125.9300168,
+      "type": "EK"
+    },
+    {
+      "label": "3 Mile (Papunya)",
+      "lat": -23.185378,
+      "lon": 131.974731,
+      "type": "WP"
+    },
+    {
+      "label": "Mount Peachy",
+      "lat": -24.3931083,
+      "lon": 133.874375,
+      "type": "WP"
+    },
+    {
+      "label": "Atji Creek",
+      "lat": -23.399503,
+      "lon": 131.983397,
+      "type": "WP"
+    },
+    {
+      "label": "New Bore",
+      "lat": -23.2215722,
+      "lon": 131.3277139,
+      "type": "WP"
+    },
+    {
+      "label": "Alkngarrija",
+      "lat": -23.955597,
+      "lon": 132.462569,
+      "type": "WP"
+    },
+    {
+      "label": "Foxall's Well",
+      "lat": -23.07385,
+      "lon": 134.823578,
+      "type": "WP"
+    },
+    {
+      "label": "Angula",
+      "lat": -22.557694,
+      "lon": 134.216522,
+      "type": "WP"
+    },
+    {
+      "label": "10 Mile (Palpang)",
+      "lat": -20.406922,
+      "lon": 134.759506,
+      "type": "WP"
+    },
+    {
+      "label": "Hatches Creek",
+      "lat": -20.84615,
+      "lon": 135.2141722,
+      "type": "WP"
+    },
+    {
+      "label": "Kumunu",
+      "lat": -18.7647639,
+      "lon": 133.6394667,
+      "type": "WP"
+    },
+    {
+      "label": "Lilly Hole Creek",
+      "lat": -17.2471417,
+      "lon": 133.7494194,
+      "type": "WP"
+    },
+    {
+      "label": "Binjari Top Camp",
+      "lat": -14.549322,
+      "lon": 132.180772,
+      "type": "WP"
+    },
+    {
+      "label": "4 Mile (Kununurra)",
+      "lat": -15.897644,
+      "lon": 128.940369,
+      "type": "WP"
+    },
+    {
+      "label": "Salt Lake 1",
+      "lat": -13.9218489,
+      "lon": 136.726086,
+      "type": "WP"
+    },
+    {
+      "label": "Bawoorrooga",
+      "lat": -18.756706,
+      "lon": 126.117981,
+      "type": "WP"
+    },
+    {
+      "label": "Ngarantjadu",
+      "lat": -19.3852083,
+      "lon": 126.2231611,
+      "type": "WP"
+    },
+    {
+      "label": "Gubuli",
+      "lat": -16.8811806,
+      "lon": 123.1457278,
+      "type": "WP"
+    },
+    {
+      "label": "Rocky Point",
+      "lat": -12.0612278,
+      "lon": 134.4023139,
+      "type": "WP"
+    },
+    {
+      "label": "Dhudupu",
+      "lat": -12.003639,
+      "lon": 135.569594,
+      "type": "WP"
+    },
+    {
+      "label": "Ngayawillii",
+      "lat": -11.994075,
+      "lon": 135.574386,
+      "type": "WP"
+    },
+    {
+      "label": "Kulpa",
+      "lat": -14.1845722,
+      "lon": 143.3714,
+      "type": "WP"
+    },
+    {
+      "label": "Silver Plain",
+      "lat": -13.9772167,
+      "lon": 143.5497444,
+      "type": "WP"
+    },
+    {
+      "label": "Moojeeba",
+      "lat": -14.0810167,
+      "lon": 143.6416333,
+      "type": "WP"
+    },
+    {
+      "label": "Mapoon",
+      "lat": -12.03285,
+      "lon": 141.8263389,
+      "type": "WP"
+    },
+    {
+      "label": "Theetinji",
+      "lat": -14.0839361,
+      "lon": 143.6642306,
+      "type": "WP"
+    },
+    {
+      "label": "Alice Well",
+      "lat": -24.881308,
+      "lon": 134.229644,
+      "type": "WP"
+    },
+    {
+      "label": "Mount Undoolya",
+      "lat": -23.7455861,
+      "lon": 134.1275639,
+      "type": "WP"
+    },
+    {
+      "label": "Charlotte Waters",
+      "lat": -25.914408,
+      "lon": 134.893111,
+      "type": "WP"
+    },
+    {
+      "label": "Rainbow Valley",
+      "lat": -24.3339167,
+      "lon": 133.6752167,
+      "type": "WP"
+    },
+    {
+      "label": "10 Mile Outstation - Yuelamu",
+      "lat": -22.466447,
+      "lon": 132.377014,
+      "type": "WP"
+    },
+    {
+      "label": "Dons Bore",
+      "lat": -22.262103,
+      "lon": 131.919753,
+      "type": "WP"
+    },
+    {
+      "label": "Mount Dennison",
+      "lat": -22.1420028,
+      "lon": 132.0532833,
+      "type": "WP"
+    },
+    {
+      "label": "Kurraya",
+      "lat": -19.7657139,
+      "lon": 134.4754333,
+      "type": "WP"
+    },
+    {
+      "label": "Putulki",
+      "lat": -19.5041722,
+      "lon": 134.4182139,
+      "type": "WP"
+    },
+    {
+      "label": "Amputjutu",
+      "lat": -24.929364,
+      "lon": 129.123139,
+      "type": "WP"
+    },
+    {
+      "label": "Eagle Valley",
+      "lat": -24.929922,
+      "lon": 129.098511,
+      "type": "WP"
+    },
+    {
+      "label": "Kunapula",
+      "lat": -25.1569556,
+      "lon": 129.2342083,
+      "type": "WP"
+    },
+    {
+      "label": "4 Mile Camp - Nguiu",
+      "lat": -11.777956,
+      "lon": 130.595139,
+      "type": "WP"
+    },
+    {
+      "label": "Lul-tju",
+      "lat": -18.3767194,
+      "lon": 130.593125,
+      "type": "WP"
+    },
+    {
+      "label": "Leigh Creek Top Tank",
+      "lat": -30.366153,
+      "lon": 138.440017,
+      "type": "WP"
+    },
+    {
+      "label": "Myrtle Springs",
+      "lat": -30.450022,
+      "lon": 138.217103,
+      "type": "WP"
+    },
+    {
+      "label": "Ipalala",
+      "lat": -23.9252611,
+      "lon": 132.6778556,
+      "type": "WP"
+    },
+    {
+      "label": "Lyiltjara",
+      "lat": -23.9356,
+      "lon": 132.6374361,
+      "type": "WP"
+    },
+    {
+      "label": "Arrkapa",
+      "lat": -23.982289,
+      "lon": 132.829864,
+      "type": "WP"
+    },
+    {
+      "label": "Labrapuntja",
+      "lat": -23.9116861,
+      "lon": 132.9396667,
+      "type": "WP"
+    },
+    {
+      "label": "Mbalkanaka",
+      "lat": -23.95305,
+      "lon": 132.8756556,
+      "type": "WP"
+    },
+    {
+      "label": "Tnawurta",
+      "lat": -23.99886,
+      "lon": 132.83843,
+      "type": "WP"
+    },
+    {
+      "label": "Illeparratye",
+      "lat": -22.02304,
+      "lon": 133.42716,
+      "type": "WP"
+    },
+    {
+      "label": "Djillimbardi",
+      "lat": -19.055144,
+      "lon": 124.860611,
+      "type": "WP"
+    },
+    {
+      "label": "Brubrunganjal (Kitty Wells)",
+      "lat": -18.866783,
+      "lon": 121.640153,
+      "type": "WP"
+    },
+    {
+      "label": "Rollah (Oompanaguba)",
+      "lat": -18.731275,
+      "lon": 121.7028722,
+      "type": "WP"
+    },
+    {
+      "label": "Gurrbalgun (Urrmarr)",
+      "lat": -16.732547,
+      "lon": 122.786806,
+      "type": "WP"
+    },
+    {
+      "label": "Djirrbiyuk",
+      "lat": -12.729822,
+      "lon": 132.763886,
+      "type": "WP"
+    },
+    {
+      "label": "Buffalo Farm",
+      "lat": -12.813744,
+      "lon": 132.594025,
+      "type": "WP"
+    },
+    {
+      "label": "Patonga Homestead",
+      "lat": -12.9583028,
+      "lon": 132.5808111,
+      "type": "WP"
+    },
+    {
+      "label": "Chuula",
+      "lat": -13.119931,
+      "lon": 143.001892,
+      "type": "WP"
+    },
+    {
+      "label": "Lilyvale Station",
+      "lat": -14.4889778,
+      "lon": 143.6766361,
+      "type": "WP"
+    },
+    {
+      "label": "Glengarland",
+      "lat": -14.8489056,
+      "lon": 143.2748861,
+      "type": "WP"
+    },
+    {
+      "label": "Yanbakwa",
+      "lat": -14.2165667,
+      "lon": 136.4562389,
+      "type": "WP"
+    },
+    {
+      "label": "Yedikba",
+      "lat": -14.0799,
+      "lon": 136.4578389,
+      "type": "WP"
+    },
+    {
+      "label": "Malkala",
+      "lat": -13.8914139,
+      "lon": 136.4425667,
+      "type": "WP"
+    },
+    {
+      "label": "Archer Point",
+      "lat": -15.600158,
+      "lon": 145.315842,
+      "type": "WP"
+    },
+    {
+      "label": "Kalpowar Station",
+      "lat": -14.892581,
+      "lon": 144.217378,
+      "type": "WP"
+    },
+    {
+      "label": "Starcke",
+      "lat": -15.059,
+      "lon": 145.1288139,
+      "type": "WP"
+    },
+    {
+      "label": "Festival Ground",
+      "lat": -15.645833,
+      "lon": 144.531708,
+      "type": "WP"
+    },
+    {
+      "label": "Puntimu",
+      "lat": -14.0507028,
+      "lon": 143.2876278,
+      "type": "WP"
+    },
+    {
+      "label": "Marmanya",
+      "lat": -21.5966472,
+      "lon": 138.3399806,
+      "type": "WP"
+    },
+    {
+      "label": "Ilperle",
+      "lat": -22.9137833,
+      "lon": 135.6324917,
+      "type": "WP"
+    },
+    {
+      "label": "Elitjia",
+      "lat": -23.77596,
+      "lon": 133.61224,
+      "type": "WP"
+    },
+    {
+      "label": "Tjintirtjintirpa",
+      "lat": -23.2853056,
+      "lon": 131.2704167,
+      "type": "WP"
+    },
+    {
+      "label": "Lwnpa",
+      "lat": -23.265025,
+      "lon": 131.2545306,
+      "type": "WP"
+    },
+    {
+      "label": "Piyultjara",
+      "lat": -24.9123472,
+      "lon": 129.3040472,
+      "type": "WP"
+    },
+    {
+      "label": "Embalgun",
+      "lat": -16.801439,
+      "lon": 122.6278,
+      "type": "WP"
+    },
+    {
+      "label": "Middle Lagoon",
+      "lat": -16.7739556,
+      "lon": 122.5756694,
+      "type": "WP"
+    },
+    {
+      "label": "Murgenella Plain",
+      "lat": -11.7103222,
+      "lon": 132.9119417,
+      "type": "WP"
+    },
+    {
+      "label": "Nardmiluk",
+      "lat": -11.9935944,
+      "lon": 134.2944639,
+      "type": "WP"
+    },
+    {
+      "label": "Djibinj",
+      "lat": -17.056725,
+      "lon": 122.317483,
+      "type": "WP"
+    },
+    {
+      "label": "Garimba",
+      "lat": -18.4619861,
+      "lon": 121.9187694,
+      "type": "WP"
+    },
+    {
+      "label": "Rocket Bore",
+      "lat": -25.9976028,
+      "lon": 131.5883333,
+      "type": "WP"
+    },
+    {
+      "label": "Gulumonon",
+      "lat": -16.4604222,
+      "lon": 122.9039778,
+      "type": "WP"
+    },
+    {
+      "label": "Woodji",
+      "lat": -11.2694694,
+      "lon": 132.3784028,
+      "type": "WP"
+    },
+    {
+      "label": "Goolargoon",
+      "lat": -16.409425,
+      "lon": 122.9528806,
+      "type": "WP"
+    },
+    {
+      "label": "Cave Hill",
+      "lat": -26.034403,
+      "lon": 131.348678,
+      "type": "WP"
+    },
+    {
+      "label": "Mount Willoughby",
+      "lat": -27.958175,
+      "lon": 134.146775,
+      "type": "WP"
+    },
+    {
+      "label": "Imperrenth",
+      "lat": -21.2108833,
+      "lon": 134.9688111,
+      "type": "WP"
+    },
+    {
+      "label": "Philipson Bore",
+      "lat": -24.0961889,
+      "lon": 134.4306944,
+      "type": "WP"
+    },
+    {
+      "label": "Happy Valley",
+      "lat": -26.3033222,
+      "lon": 131.0889444,
+      "type": "WP"
+    },
+    {
+      "label": "Racecourse",
+      "lat": -26.2576556,
+      "lon": 132.1682278,
+      "type": "WP"
+    },
+    {
+      "label": "Shannons Bore",
+      "lat": -27.0423833,
+      "lon": 132.7242278,
+      "type": "WP"
+    },
+    {
+      "label": "Walalakara",
+      "lat": -27.0047083,
+      "lon": 131.7906639,
+      "type": "WP"
+    },
+    {
+      "label": "Granite Downs",
+      "lat": -26.9380778,
+      "lon": 133.4972694,
+      "type": "WP"
+    },
+    {
+      "label": "Goojarr Goonyool (Two Moons)\n",
+      "lat": -16.7752111,
+      "lon": 122.6101611,
+      "type": "WP"
+    },
+    {
+      "label": "Mercedes Cove",
+      "lat": -16.7655889,
+      "lon": 122.5915306,
+      "type": "WP"
+    },
+    {
+      "label": "Wiligi",
+      "lat": -11.4946,
+      "lon": 132.7512194,
+      "type": "WP"
+    },
+    {
+      "label": "Sandy Bore NT",
+      "lat": -24.5604389,
+      "lon": 132.4994361,
+      "type": "WP"
+    },
+    {
+      "label": "Sandy Bore SA",
+      "lat": -27.1548,
+      "lon": 132.481125,
+      "type": "WP"
+    },
+    {
+      "label": "Penyeme",
+      "lat": -22.7872917,
+      "lon": 135.6725778,
+      "type": "WP"
+    },
+    {
+      "label": "Milibunthurra",
+      "lat": -15.9624861,
+      "lon": 136.4229139,
+      "type": "WP"
+    },
+    {
+      "label": "Sandridge",
+      "lat": -16.0417194,
+      "lon": 136.3483278,
+      "type": "WP"
+    },
+    {
+      "label": "Bauhinia Downs",
+      "lat": -16.212289,
+      "lon": 135.474639,
+      "type": "WP"
+    },
+    {
+      "label": "Geboowama",
+      "lat": -15.9258806,
+      "lon": 128.7678528,
+      "type": "WP"
+    },
+    {
+      "label": "Kangaroo Island",
+      "lat": -15.8884583,
+      "lon": 136.5394278,
+      "type": "WP"
+    },
+    {
+      "label": "Mooloowa",
+      "lat": -15.6229444,
+      "lon": 137.0010833,
+      "type": "WP"
+    },
+    {
+      "label": "South West Island",
+      "lat": -15.6887806,
+      "lon": 136.6582944,
+      "type": "WP"
+    },
+    {
+      "label": "Mimina",
+      "lat": -16.8021667,
+      "lon": 136.8339083,
+      "type": "WP"
+    },
+    {
+      "label": "Jungalina",
+      "lat": -17.2179833,
+      "lon": 137.9890444,
+      "type": "WP"
+    },
+    {
+      "label": "Cow Lagoon",
+      "lat": -16.207758,
+      "lon": 135.949631,
+      "type": "WP"
+    },
+    {
+      "label": "Maria Lagoon",
+      "lat": -15.300175,
+      "lon": 135.4445194,
+      "type": "WP"
+    },
+    {
+      "label": "Peppan",
+      "lat": -12.6620306,
+      "lon": 142.0731194,
+      "type": "WP"
+    },
+    {
+      "label": "Wa-Tyne",
+      "lat": -12.6984194,
+      "lon": 141.98445,
+      "type": "WP"
+    },
+    {
+      "label": "Paradise Farm",
+      "lat": -12.9389556,
+      "lon": 132.5331889,
+      "type": "WP"
+    },
+    {
+      "label": "Rokeby",
+      "lat": -13.6567417,
+      "lon": 142.6682889,
+      "type": "WP"
+    },
+    {
+      "label": "Kumurrulu",
+      "lat": -12.2719833,
+      "lon": 134.0704806,
+      "type": "WP"
+    },
+    {
+      "label": "Barrijowkeng",
+      "lat": -12.349178,
+      "lon": 134.175414,
+      "type": "WP"
+    },
+    {
+      "label": "Baa's Yard",
+      "lat": -15.111211,
+      "lon": 141.774553,
+      "type": "WP"
+    },
+    {
+      "label": "Bana Yarrilji Bubu (Shipton's Flat)",
+      "lat": -15.741317,
+      "lon": 145.226622,
+      "type": "WP"
+    },
+    {
+      "label": "Djinkarr",
+      "lat": -12.202856,
+      "lon": 134.285933,
+      "type": "WP"
+    },
+    {
+      "label": "Scrubby Bore",
+      "lat": -15.4469972,
+      "lon": 141.6006472,
+      "type": "WP"
+    },
+    {
+      "label": "Annesley Point",
+      "lat": -11.405808,
+      "lon": 132.825394,
+      "type": "WP"
+    },
+    {
+      "label": "Mikginj Valley",
+      "lat": -12.4795833,
+      "lon": 133.0746778,
+      "type": "WP"
+    },
+    {
+      "label": "Bulinjarr",
+      "lat": -18.589997,
+      "lon": 123.613686,
+      "type": "WP"
+    },
+    {
+      "label": "Parkal Springs",
+      "lat": -18.5870861,
+      "lon": 125.0627667,
+      "type": "WP"
+    },
+    {
+      "label": "Wungu WA",
+      "lat": -18.3254611,
+      "lon": 127.9988944,
+      "type": "WP"
+    },
+    {
+      "label": "Kamparrimi",
+      "lat": -18.313797,
+      "lon": 125.6227402,
+      "type": "WP"
+    },
+    {
+      "label": "Gilly Sharpe",
+      "lat": -18.7471056,
+      "lon": 125.9732194,
+      "type": "WP"
+    },
+    {
+      "label": "Rockie Springs",
+      "lat": -18.770875,
+      "lon": 126.698906,
+      "type": "WP"
+    },
+    {
+      "label": "Alligator Hole",
+      "lat": -16.029472,
+      "lon": 128.878539,
+      "type": "WP"
+    },
+    {
+      "label": "Marunbabidi",
+      "lat": -15.3984972,
+      "lon": 126.1452556,
+      "type": "WP"
+    },
+    {
+      "label": "Yirralalem\n",
+      "lat": -15.8874667,
+      "lon": 128.6921833,
+      "type": "WP"
+    },
+    {
+      "label": "Warringarri",
+      "lat": -17.7374583,
+      "lon": 125.3562472,
+      "type": "WP"
+    },
+    {
+      "label": "Sabina",
+      "lat": -13.86015,
+      "lon": 129.9315806,
+      "type": "WP"
+    },
+    {
+      "label": "Delye",
+      "lat": -13.765733,
+      "lon": 129.976836,
+      "type": "WP"
+    },
+    {
+      "label": "Mulingi",
+      "lat": -13.9272833,
+      "lon": 129.9503167,
+      "type": "WP"
+    },
+    {
+      "label": "Wudaduk",
+      "lat": -14.027967,
+      "lon": 129.943467,
+      "type": "WP"
+    },
+    {
+      "label": "Irrgul Point",
+      "lat": -11.3421167,
+      "lon": 132.52925,
+      "type": "WP"
+    },
+    {
+      "label": "Milmilngkan",
+      "lat": -12.5231972,
+      "lon": 134.2473306,
+      "type": "WP"
+    },
+    {
+      "label": "Dhupuwamirri",
+      "lat": -12.668478,
+      "lon": 135.392411,
+      "type": "WP"
+    },
+    {
+      "label": "Amuroona",
+      "lat": -26.8639,
+      "lon": 133.031906,
+      "type": "WP"
+    },
+    {
+      "label": "Dhamiyaka",
+      "lat": -12.656325,
+      "lon": 135.855317,
+      "type": "WP"
+    },
+    {
+      "label": "Katjikuta",
+      "lat": -26.1538083,
+      "lon": 131.1775972,
+      "type": "WP"
+    },
+    {
+      "label": "Djarrakapi",
+      "lat": -13.297022,
+      "lon": 136.351592,
+      "type": "WP"
+    },
+    {
+      "label": "Gurkawuy",
+      "lat": -12.9759444,
+      "lon": 136.5038,
+      "type": "WP"
+    },
+    {
+      "label": "Kwala",
+      "lat": -23.9271,
+      "lon": 132.8896167,
+      "type": "WP"
+    },
+    {
+      "label": "Spotted Tiger",
+      "lat": -23.042975,
+      "lon": 134.9178778,
+      "type": "WP"
+    },
+    {
+      "label": "Yimidarra",
+      "lat": -14.2177333,
+      "lon": 135.5648806,
+      "type": "WP"
+    },
+    {
+      "label": "Manginberri",
+      "lat": -12.2418806,
+      "lon": 134.9788361,
+      "type": "WP"
+    },
+    {
+      "label": "Gorrong Gorrong",
+      "lat": -12.1223759,
+      "lon": 134.4953306,
+      "type": "WP"
+    },
+    {
+      "label": "Waiminari",
+      "lat": -11.7687306,
+      "lon": 133.3977972,
+      "type": "WP"
+    },
+    {
+      "label": "Balaleah",
+      "lat": -16.428764,
+      "lon": 139.622758,
+      "type": "WP"
+    },
+    {
+      "label": "Barrakiah",
+      "lat": -16.479419,
+      "lon": 139.697783,
+      "type": "WP"
+    },
+    {
+      "label": "Njinjilki",
+      "lat": -17.091486,
+      "lon": 139.566881,
+      "type": "WP"
+    },
+    {
+      "label": "Bidjagun",
+      "lat": -16.570083,
+      "lon": 139.211625,
+      "type": "WP"
+    },
+    {
+      "label": "Dadagun",
+      "lat": -16.453742,
+      "lon": 139.666825,
+      "type": "WP"
+    },
+    {
+      "label": "Dimereah",
+      "lat": -16.523611,
+      "lon": 139.4422,
+      "type": "WP"
+    },
+    {
+      "label": "Karbulwarnamyo",
+      "lat": -12.7648361,
+      "lon": 133.8446806,
+      "type": "WP"
+    },
+    {
+      "label": "Galawarra",
+      "lat": -12.043364,
+      "lon": 135.594086,
+      "type": "WP"
+    },
+    {
+      "label": "Corinda",
+      "lat": -17.888714,
+      "lon": 138.584581,
+      "type": "WP"
+    },
+    {
+      "label": "Doonguru",
+      "lat": -16.666483,
+      "lon": 139.314072,
+      "type": "WP"
+    },
+    {
+      "label": "Nine Mile",
+      "lat": -17.9190556,
+      "lon": 138.7050167,
+      "type": "WP"
+    },
+    {
+      "label": "Dwendi",
+      "lat": -16.541364,
+      "lon": 139.220672,
+      "type": "WP"
+    },
+    {
+      "label": "Elizabeth River",
+      "lat": -16.496528,
+      "lon": 139.565383,
+      "type": "WP"
+    },
+    {
+      "label": "Ganthawu",
+      "lat": -16.669417,
+      "lon": 139.429672,
+      "type": "WP"
+    },
+    {
+      "label": "Guban Guru",
+      "lat": -16.59638,
+      "lon": 139.2395,
+      "type": "WP"
+    },
+    {
+      "label": "Gubanyari",
+      "lat": -16.5756139,
+      "lon": 139.3623972,
+      "type": "WP"
+    },
+    {
+      "label": "Garinjinny",
+      "lat": -16.6749167,
+      "lon": 135.6481472,
+      "type": "WP"
+    },
+    {
+      "label": "Gunun Woonam",
+      "lat": -16.6587917,
+      "lon": 139.379425,
+      "type": "WP"
+    },
+    {
+      "label": "Lamagian Point",
+      "lat": -16.8007389,
+      "lon": 139.1290139,
+      "type": "WP"
+    },
+    {
+      "label": "Lametha",
+      "lat": -16.4941306,
+      "lon": 139.2659,
+      "type": "WP"
+    },
+    {
+      "label": "Wanakutja",
+      "lat": -11.1055444,
+      "lon": 132.5109556,
+      "type": "WP"
+    },
+    {
+      "label": "Sandy Bay",
+      "lat": -11.20742778,
+      "lon": 132.5799417,
+      "type": "WP"
+    },
+    {
+      "label": "Oriners",
+      "lat": -15.4107278,
+      "lon": 142.9441222,
+      "type": "WP"
+    },
+    {
+      "label": "Adjamarragu",
+      "lat": -11.152769,
+      "lon": 132.474808,
+      "type": "WP"
+    },
+    {
+      "label": "Alamirra",
+      "lat": -11.067675,
+      "lon": 132.528167,
+      "type": "WP"
+    },
+    {
+      "label": "Lowareah",
+      "lat": -16.4481722,
+      "lon": 139.4181361,
+      "type": "WP"
+    },
+    {
+      "label": "Mayanba",
+      "lat": -16.8396306,
+      "lon": 139.0947889,
+      "type": "WP"
+    },
+    {
+      "label": "Piggy Well",
+      "lat": -16.6799972,
+      "lon": 139.1601556,
+      "type": "WP"
+    },
+    {
+      "label": "Pennefather",
+      "lat": -12.23528889,
+      "lon": 141.7186278,
+      "type": "WP"
+    },
+    {
+      "label": "China Camp",
+      "lat": -16.052403,
+      "lon": 145.300858,
+      "type": "WP"
+    },
+    {
+      "label": "Thompson's Creek",
+      "lat": -15.9558306,
+      "lon": 145.3464972,
+      "type": "WP"
+    },
+    {
+      "label": "Myra Vale",
+      "lat": -17.0469694,
+      "lon": 141.2807167,
+      "type": "WP"
+    },
+    {
+      "label": "Black Craggy",
+      "lat": -15.608431,
+      "lon": 136.671814,
+      "type": "WP"
+    },
+    {
+      "label": "Wungu QLD",
+      "lat": -17.1261417,
+      "lon": 144.9966444,
+      "type": "WP"
+    },
+    {
+      "label": "Ullawarra",
+      "lat": -23.4803778,
+      "lon": 116.1102444,
+      "type": "WP"
+    },
+    {
+      "label": "Mingullatharndo",
+      "lat": -20.8042056,
+      "lon": 117.2120528,
+      "type": "WP"
+    },
+    {
+      "label": "Jundaru",
+      "lat": -21.84405,
+      "lon": 115.6272194,
+      "type": "WP"
+    },
+    {
+      "label": "Weymul",
+      "lat": -21.0134806,
+      "lon": 116.8066333,
+      "type": "WP"
+    },
+    {
+      "label": "Marta Marta",
+      "lat": -20.3540611,
+      "lon": 118.9821778,
+      "type": "WP"
+    },
+    {
+      "label": "Bundy Bunna",
+      "lat": -28.8721851,
+      "lon": 115.7273088,
+      "type": "WP"
+    },
+    {
+      "label": "Luntharra",
+      "lat": -23.73521,
+      "lon": 132.04502,
+      "type": "WP"
+    },
+    {
+      "label": "Merral Ntarrakala",
+      "lat": -23.9143667,
+      "lon": 132.8289194,
+      "type": "WP"
+    },
+    {
+      "label": "Wittin",
+      "lat": -19.5449306,
+      "lon": 134.2365583,
+      "type": "WP"
+    },
+    {
+      "label": "Goombaragin",
+      "lat": -16.7960444,
+      "lon": 122.663375,
+      "type": "WP"
+    },
+    {
+      "label": "Gnylmarung",
+      "lat": -16.8599528,
+      "lon": 122.5499111,
+      "type": "WP"
+    },
+    {
+      "label": "Map",
+      "lat": -16.8357944,
+      "lon": 122.5386194,
+      "type": "WP"
+    },
+    {
+      "label": "Gumbarnun",
+      "lat": -16.4230889,
+      "lon": 123.0321806,
+      "type": "WP"
+    },
+    {
+      "label": "Banana Well",
+      "lat": -16.976614,
+      "lon": 122.588378,
+      "type": "WP"
+    },
+    {
+      "label": "Poonindie",
+      "lat": -34.5545778,
+      "lon": 135.8750306,
+      "type": "WP"
+    },
+    {
+      "label": "Kuranya",
+      "lat": -34.6283444,
+      "lon": 135.6951,
+      "type": "WP"
+    },
+    {
+      "label": "Munda & Wanna Mar",
+      "lat": -32.3219944,
+      "lon": 133.9337778,
+      "type": "WP"
+    },
+    {
+      "label": "Muckaty",
+      "lat": -18.6391167,
+      "lon": 133.8959972,
+      "type": "WP"
+    },
+    {
+      "label": "Ngurrara",
+      "lat": -19.4215306,
+      "lon": 135.4054861,
+      "type": "WP"
+    },
+    {
+      "label": "Burudu",
+      "lat": -19.599769,
+      "lon": 136.925583,
+      "type": "WP"
+    },
+    {
+      "label": "Mungurrupa",
+      "lat": -20.5847583,
+      "lon": 129.7333833,
+      "type": "WP"
+    },
+    {
+      "label": "Munmural",
+      "lat": -17.455839,
+      "lon": 125.750686,
+      "type": "WP"
+    },
+    {
+      "label": "Bungardi",
+      "lat": -18.173578,
+      "lon": 125.610022,
+      "type": "WP"
+    },
+    {
+      "label": "Burraluba Yura Ngurra Workers Hostel",
+      "lat": -18.259917,
+      "lon": 127.710419,
+      "type": "WP"
+    },
+    {
+      "label": "Barangya Boongaray",
+      "lat": -18.126172,
+      "lon": 127.760764,
+      "type": "WP"
+    },
+    {
+      "label": "Norton Bore",
+      "lat": -17.2013333,
+      "lon": 128.0616544,
+      "type": "WP"
+    },
+    {
+      "label": "Lingarra",
+      "lat": -16.4870306,
+      "lon": 130.6428972,
+      "type": "WP"
+    },
+    {
+      "label": "Fitzroy Station",
+      "lat": -15.563606,
+      "lon": 130.933533,
+      "type": "WP"
+    },
+    {
+      "label": "Wonmurri",
+      "lat": -16.0516194,
+      "lon": 136.8610222,
+      "type": "WP"
+    },
+    {
+      "label": "Wundigalla",
+      "lat": -16.4752417,
+      "lon": 137.04335,
+      "type": "WP"
+    },
+    {
+      "label": "Budjanga",
+      "lat": -16.177972,
+      "lon": 136.768922,
+      "type": "WP"
+    },
+    {
+      "label": "Dhayirri",
+      "lat": -11.961403,
+      "lon": 135.618422,
+      "type": "WP"
+    },
+    {
+      "label": "Bull Rush",
+      "lat": -16.198561,
+      "lon": 136.7751,
+      "type": "WP"
+    },
+    {
+      "label": "Watdagawuy",
+      "lat": -11.9399583,
+      "lon": 135.7000111,
+      "type": "WP"
+    },
+    {
+      "label": "Gitan",
+      "lat": -11.9123315,
+      "lon": 135.7813294,
+      "type": "WP"
+    },
+    {
+      "label": "Gulumarri",
+      "lat": -11.9173139,
+      "lon": 135.8222972,
+      "type": "WP"
+    },
+    {
+      "label": "Nanginyburra",
+      "lat": -11.7600861,
+      "lon": 135.8737333,
+      "type": "WP"
+    },
+    {
+      "label": "Bullariny",
+      "lat": -12.046397,
+      "lon": 135.703553,
+      "type": "WP"
+    },
+    {
+      "label": "Black Tank South",
+      "lat": -23.357786,
+      "lon": 134.020081,
+      "type": "WP"
+    },
+    {
+      "label": "Nikawu",
+      "lat": -12.089675,
+      "lon": 135.545656,
+      "type": "WP"
+    },
+    {
+      "label": "Pandanus Ridge",
+      "lat": -15.6208444,
+      "lon": 136.1704111,
+      "type": "WP"
+    },
+    {
+      "label": "Manangoora",
+      "lat": -16.0030417,
+      "lon": 136.8379972,
+      "type": "WP"
+    },
+    {
+      "label": "Budjana",
+      "lat": -16.26815,
+      "lon": 136.878539,
+      "type": "WP"
+    },
+    {
+      "label": "Ngaduniyerrk",
+      "lat": -13.8201472,
+      "lon": 136.4562528,
+      "type": "WP"
+    },
+    {
+      "label": "Akwalirrumanja",
+      "lat": -13.8636,
+      "lon": 136.778642,
+      "type": "WP"
+    },
+    {
+      "label": "Leske Pools",
+      "lat": -14.1372778,
+      "lon": 136.5160361,
+      "type": "WP"
+    },
+    {
+      "label": "Gumeragi",
+      "lat": -11.1701833,
+      "lon": 132.1640778,
+      "type": "WP"
+    },
+    {
+      "label": "Marina Plains",
+      "lat": -14.5477528,
+      "lon": 143.8748472,
+      "type": "WP"
+    },
+    {
+      "label": "Nangak",
+      "lat": -12.2133417,
+      "lon": 134.2964333,
+      "type": "WP"
+    },
+    {
+      "label": "Amatjatpalk",
+      "lat": -11.594869,
+      "lon": 133.454881,
+      "type": "WP"
+    },
+    {
+      "label": "Wigu",
+      "lat": -11.6135222,
+      "lon": 133.4328778,
+      "type": "WP"
+    },
+    {
+      "label": "Batavia Downs",
+      "lat": -12.661758,
+      "lon": 142.670625,
+      "type": "WP"
+    },
+    {
+      "label": "Garanydjirr",
+      "lat": -12.281767,
+      "lon": 135.02095,
+      "type": "WP"
+    },
+    {
+      "label": "Takapimiliyi",
+      "lat": -11.8151444,
+      "lon": 130.8014056,
+      "type": "WP"
+    },
+    {
+      "label": "The Crossing",
+      "lat": -15.4051167,
+      "lon": 141.7117167,
+      "type": "WP"
+    },
+    {
+      "label": "Melsonby",
+      "lat": -15.2425639,
+      "lon": 144.8112806,
+      "type": "WP"
+    },
+    {
+      "label": "Billy Boil",
+      "lat": -15.183033,
+      "lon": 145.121733,
+      "type": "WP"
+    },
+    {
+      "label": "Marrkalawa",
+      "lat": -13.5742361,
+      "lon": 135.713225,
+      "type": "WP"
+    },
+    {
+      "label": "Kellerk",
+      "lat": -13.9626722,
+      "lon": 130.3209694,
+      "type": "WP"
+    },
+    {
+      "label": "Marramarrani",
+      "lat": -11.3027722,
+      "lon": 132.5533,
+      "type": "WP"
+    },
+    {
+      "label": "Bar Barrum",
+      "lat": -17.403919,
+      "lon": 144.993806,
+      "type": "WP"
+    },
+    {
+      "label": "Wonya Bore",
+      "lat": -15.31758333,
+      "lon": 141.7591083,
+      "type": "WP"
+    },
+    {
+      "label": "Nalayindi",
+      "lat": -12.5421083,
+      "lon": 135.1781611,
+      "type": "WP"
+    },
+    {
+      "label": "Yamini",
+      "lat": -12.790711,
+      "lon": 134.357056,
+      "type": "WP"
+    },
+    {
+      "label": "Tankaanu",
+      "lat": -26.299075,
+      "lon": 130.1665194,
+      "type": "WP"
+    },
+    {
+      "label": "Aeroplane 1",
+      "lat": -26.251258,
+      "lon": 132.192703,
+      "type": "WP"
+    },
+    {
+      "label": "Balfour Well",
+      "lat": -26.366081,
+      "lon": 132.0628814,
+      "type": "WP"
+    },
+    {
+      "label": "Turkey Bore",
+      "lat": -26.3287972,
+      "lon": 132.0799722,
+      "type": "WP"
+    },
+    {
+      "label": "Murphy Creek",
+      "lat": -16.92205,
+      "lon": 122.5697639,
+      "type": "WP"
+    },
+    {
+      "label": "Ngarlan Burr",
+      "lat": -16.907636,
+      "lon": 122.569769,
+      "type": "WP"
+    },
+    {
+      "label": "Urremerne",
+      "lat": -23.9802417,
+      "lon": 134.0602417,
+      "type": "WP"
+    },
+    {
+      "label": "Hoppy's Camp",
+      "lat": -23.6843611,
+      "lon": 133.8771056,
+      "type": "WP"
+    },
+    {
+      "label": "Imperenth #1",
+      "lat": -21.23295,
+      "lon": 134.946456,
+      "type": "WP"
+    },
+    {
+      "label": "West Waterhouse",
+      "lat": -23.9956111,
+      "lon": 133.1137694,
+      "type": "WP"
+    },
+    {
+      "label": "Tjiwuru",
+      "lat": -26.4032833,
+      "lon": 132.2083889,
+      "type": "WP"
+    },
+    {
+      "label": "Black Hill 3",
+      "lat": -26.324072,
+      "lon": 132.338744,
+      "type": "WP"
+    },
+    {
+      "label": "Eagle Bore",
+      "lat": -26.007944,
+      "lon": 132.094497,
+      "type": "WP"
+    },
+    {
+      "label": "New Well",
+      "lat": -26.08665,
+      "lon": 132.2332,
+      "type": "WP"
+    },
+    {
+      "label": "Alpara",
+      "lat": -25.913497,
+      "lon": 131.212053,
+      "type": "WP"
+    },
+    {
+      "label": "Mulga Bore",
+      "lat": -26.8146444,
+      "lon": 132.1127472,
+      "type": "WP"
+    },
+    {
+      "label": "Mpakaputa",
+      "lat": -24.01875,
+      "lon": 132.86377,
+      "type": "WP"
+    },
+    {
+      "label": "Iltjiltjari",
+      "lat": -24.533975,
+      "lon": 132.4926306,
+      "type": "WP"
+    },
+    {
+      "label": "Five Mile Camp",
+      "lat": -21.906442,
+      "lon": 120.190789,
+      "type": "WP"
+    },
+    {
+      "label": "Three Mile",
+      "lat": -21.8595028,
+      "lon": 120.1589278,
+      "type": "WP"
+    },
+    {
+      "label": "Puntawarri",
+      "lat": -23.5951972,
+      "lon": 121.6012583,
+      "type": "WP"
+    },
+    {
+      "label": "Wirrillimarra",
+      "lat": -22.1923,
+      "lon": 118.7566833,
+      "type": "WP"
+    },
+    {
+      "label": "Towrana",
+      "lat": -25.4370722,
+      "lon": 115.229125,
+      "type": "WP"
+    },
+    {
+      "label": "Gilroyd",
+      "lat": -25.8207944,
+      "lon": 115.1896889,
+      "type": "WP"
+    },
+    {
+      "label": "Slim Creek",
+      "lat": -16.6508583,
+      "lon": 139.1594083,
+      "type": "WP"
+    },
+    {
+      "label": "Carnot Springs",
+      "lat": -17.1709989,
+      "lon": 122.317742,
+      "type": "WP"
+    },
+    {
+      "label": "Walburdin",
+      "lat": -16.7623889,
+      "lon": 139.1460417,
+      "type": "WP"
+    },
+    {
+      "label": "Tjilpil",
+      "lat": -26.9827333,
+      "lon": 131.995575,
+      "type": "WP"
+    },
+    {
+      "label": "Spoon Creek",
+      "lat": -17.65357,
+      "lon": 138.88179,
+      "type": "WP"
+    },
+    {
+      "label": "20 Mile",
+      "lat": -16.08575,
+      "lon": 136.548386,
+      "type": "WP"
+    },
+    {
+      "label": "Wallace's Outstation",
+      "lat": -16.1227639,
+      "lon": 136.6357417,
+      "type": "WP"
+    },
+    {
+      "label": "Fish River",
+      "lat": -17.774775,
+      "lon": 137.712417,
+      "type": "WP"
+    },
+    {
+      "label": "Babungi",
+      "lat": -15.744069,
+      "lon": 136.978456,
+      "type": "WP"
+    },
+    {
+      "label": "Berraja",
+      "lat": -12.07225,
+      "lon": 134.504897,
+      "type": "WP"
+    },
+    {
+      "label": "Gupanga",
+      "lat": -12.0753333,
+      "lon": 134.5837556,
+      "type": "WP"
+    },
+    {
+      "label": "Shelfo Crossing",
+      "lat": -15.3604083,
+      "lon": 141.9653639,
+      "type": "WP"
+    },
+    {
+      "label": "Bundadharri",
+      "lat": -12.235578,
+      "lon": 134.846756,
+      "type": "WP"
+    },
+    {
+      "label": "Spring Creek",
+      "lat": -16.5588278,
+      "lon": 136.497025,
+      "type": "WP"
+    },
+    {
+      "label": "Normanby Station",
+      "lat": -15.3324528,
+      "lon": 144.8160556,
+      "type": "WP"
+    },
+    {
+      "label": "Merapah Station",
+      "lat": -13.7821444,
+      "lon": 142.5490417,
+      "type": "WP"
+    },
+    {
+      "label": "Nulla Nulla",
+      "lat": -15.5479,
+      "lon": 127.7887,
+      "type": "WP"
+    },
+    {
+      "label": "Wumajbarr",
+      "lat": -14.1668472,
+      "lon": 135.6924278,
+      "type": "WP"
+    },
+    {
+      "label": "New Strathgordon",
+      "lat": -14.7949194,
+      "lon": 142.4333639,
+      "type": "WP"
+    },
+    {
+      "label": "Garrathiya",
+      "lat": -12.5972939,
+      "lon": 136.551072,
+      "type": "WP"
+    },
+    {
+      "label": "Gadji",
+      "lat": -12.272825,
+      "lon": 134.820283,
+      "type": "WP"
+    },
+    {
+      "label": "Lockhart Old Site",
+      "lat": -12.95985556,
+      "lon": 143.5083778,
+      "type": "WP"
+    },
+    {
+      "label": "Nyacha Wanta",
+      "lat": -13.701975,
+      "lon": 143.292192,
+      "type": "WP"
+    },
+    {
+      "label": "Gumuluji",
+      "lat": -17.9353694,
+      "lon": 137.4806528,
+      "type": "WP"
+    },
+    {
+      "label": "Pago",
+      "lat": -14.1246028,
+      "lon": 126.7189111,
+      "type": "WP"
+    },
+    {
+      "label": "WH - Canteen Creek",
+      "lat": -20.64463,
+      "lon": 135.586,
+      "type": "WH"
+    },
+    {
+      "label": "WH - Engawala",
+      "lat": -22.80301,
+      "lon": 134.4537,
+      "type": "WH"
+    },
+    {
+      "label": "WH - Haasts Bluff",
+      "lat": -23.44765,
+      "lon": 131.8823,
+      "type": "WH"
+    },
+    {
+      "label": "WH - Kundat Djaru",
+      "lat": -18.79407,
+      "lon": 128.6159,
+      "type": "WH"
+    },
+    {
+      "label": "WH - Alpurrurulam",
+      "lat": -20.98574,
+      "lon": 137.8492,
+      "type": "WH"
+    },
+    {
+      "label": "WH - Kintore",
+      "lat": -23.27595,
+      "lon": 129.3887,
+      "type": "WH"
+    },
+    {
+      "label": "WH - Nyirripi",
+      "lat": -22.64972,
+      "lon": 130.5522,
+      "type": "WH"
+    },
+    {
+      "label": "WH - Laramba",
+      "lat": -22.53429,
+      "lon": 132.754,
+      "type": "WH"
+    },
+    {
+      "label": "WH - Areyonga",
+      "lat": -24.07307,
+      "lon": 132.2694,
+      "type": "WH"
+    },
+    {
+      "label": "WH - Wutunugurra",
+      "lat": -20.46263,
+      "lon": 135.2506,
+      "type": "WH"
+    },
+    {
+      "label": "WH - Tara",
+      "lat": -21.50685,
+      "lon": 133.99593,
+      "type": "WH"
+    },
+    {
+      "label": "WH - Yuelamu",
+      "lat": -22.2591,
+      "lon": 132.2053,
+      "type": "WH"
+    },
+    {
+      "label": "WH - Mungkarta",
+      "lat": -20.33712,
+      "lon": 134.1982,
+      "type": "WH"
+    },
+    {
+      "label": "EK - Glen Hill",
+      "lat": -16.54383,
+      "lon": 128.3581,
+      "type": "EK"
+    },
+    {
+      "label": "EK - Baulu-Wah Community (Violet Valley)",
+      "lat": -17.21727,
+      "lon": 128.0138,
+      "type": "EK"
+    },
+    {
+      "label": "CP - Ngalpa Ngalpa 08 8962 3986\n",
+      "lat": -19.634462,
+      "lon": 134.194524,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Mallinbar 08 9192 6296 [REMOVED]",
+      "lat": -17.9568255,
+      "lon": 122.244043,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Harts Range 08 8956 9028 [REMOVED]",
+      "lat": -22.9832616,
+      "lon": 134.9344598,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Bulgin 08 9192 4479",
+      "lat": -16.39735,
+      "lon": 122.99887,
+      "type": "CP"
+    },
+    {
+      "label": "CP - Wadeye 08 8978 2701",
+      "lat": -14.2404206,
+      "lon": 129.5204133,
+      "type": "CP"
+    },
+    {
+      "label": "Warnbullin",
+      "lat": -16.7165139,
+      "lon": 139.31865,
+      "type": "WP"
+    },
+    {
+      "label": "Kakalpurannha Homeland",
+      "lat": -30.817775,
+      "lon": 138.409303,
+      "type": "WP"
+    },
+    {
+      "label": "Kalumburu",
+      "lat": -16.7165139,
+      "lon": 139.31865,
+      "type": "RCP"
+    },
+    {
+      "label": "Aurukun",
+      "lat": -13.356570391738433,
+      "lon": 141.7261345973173,
+      "type": "NBN"
+    },
+    {
+      "label": "Koonibba",
+      "lat": -31.902965392634812,
+      "lon": 133.42718226134878,
+      "type": "NBN"
+    },
+    {
+      "label": "Indulkana",
+      "lat": -26.96613265229543,
+      "lon": 133.30953758249495,
+      "type": "NBN"
+    },
+    {
+      "label": "Tjuntjuntjara",
+      "lat": -29.339910154280673,
+      "lon": 127.09716096296746,
+      "type": "RCP"
+    },
+    {
+      "label": "Warakurna",
+      "lat": -25.00159299873798,
+      "lon": 128.28790342028654,
+      "type": "NBN"
+    }
   ]
 }

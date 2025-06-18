@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Map with Search</title>
+  <title>Sites</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -48,6 +48,30 @@
     .suggestion:hover {
       background: #eee;
     }
+
+    #legend {
+      position: absolute;
+      bottom: 10px;
+      left: 50px;
+      z-index: 1000;
+      background: white;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      font-family: sans-serif;
+    }
+
+    #legend h4 {
+      margin: 0 0 5px 0;
+      font-size: 14px;
+    }
+
+    #legend label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -59,124 +83,177 @@
 
   <div id="map"></div>
 
+  <div id="legend">
+    <h4>Legend</h4>
+    <div id="legend-content"></div>
+  </div>
+
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-    <script>
-    const map = L.map('map').setView([-24.900209941653188, 133.99290092665741], 5);
+  <script>
+    const map = L.map('map').setView([-24.9002, 133.9929], 5);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
+      attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
     const input = document.getElementById('searchInput');
     const suggestionsBox = document.getElementById('suggestions');
     let markers = [];
+    const typeVisibility = {};
+    const typeToMarkers = {};
 
     function getMarkerIconUrl(type) {
-        switch ((type || '').toUpperCase()) {
-        case 'CP':
-            return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png';
-        case 'WP':
-            return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png';
-        case 'RCP':
-            return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png';
-        case 'NBN':
-            return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png';
-        case 'WH':
-            return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png';
-        default:
-            return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png';
-        }
+      switch ((type || '').toUpperCase()) {
+        case 'CP': return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png';
+        case 'WP': return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png';
+        case 'RCP': return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png';
+        case 'NBN': return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png';
+        case 'WH': return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png';
+        default:   return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png';
+      }
     }
 
     function loadPins() {
-        // Remove old markers from map
-        markers.forEach(m => map.removeLayer(m));
-        markers = [];
-        fetch('track-8f93d7.json?cacheBust=' + new Date().getTime())
-        .then(response => response.json())
+      markers.forEach(m => map.removeLayer(m));
+      markers = [];
+      Object.keys(typeToMarkers).forEach(type => delete typeToMarkers[type]);
+
+      fetch('track-8f93d7.json?cacheBust=' + new Date().getTime())
+        .then(response => {
+          if (!response.ok) throw new Error("Failed to fetch track-8f93d7.json");
+          return response.json();
+        })
         .then(data => {
-            data.pins.forEach(pin => {
+          const legendTypes = new Set();
+
+          data.pins.forEach(pin => {
+            const type = (pin.type || 'Unknown').toUpperCase();
+            legendTypes.add(type);
+
             const popupContent = `
-                <strong>${pin.label}</strong><br/>
-                Lat: ${pin.lat.toFixed(5)}<br/>
-                Lon: ${pin.lon.toFixed(5)}<br/>
-                Type: ${pin.type || 'Unknown'}
+              <strong>${pin.label}</strong><br/>
+              Lat: ${pin.lat.toFixed(5)}<br/>
+              Lon: ${pin.lon.toFixed(5)}<br/>
+              Type: ${type}
             `;
 
             const markerIcon = L.icon({
-                iconUrl: getMarkerIconUrl(pin.type),
-                iconSize: [25, 41],
-                iconAnchor: [12, 41],
-                popupAnchor: [1, -34],
-                shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-                shadowSize: [41, 41]
+              iconUrl: getMarkerIconUrl(type),
+              iconSize: [25, 41],
+              iconAnchor: [12, 41],
+              popupAnchor: [1, -34],
+              shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+              shadowSize: [41, 41]
             });
 
             const marker = L.marker([pin.lat, pin.lon], { icon: markerIcon })
-                .addTo(map)
-                .bindPopup(popupContent);
-
+              .bindPopup(popupContent);
             marker.pinLabel = pin.label;
-            markers.push(marker);
-            });
 
-            updateSuggestions(input.value);
+            if (!typeToMarkers[type]) {
+              typeToMarkers[type] = [];
+              if (typeof typeVisibility[type] === 'undefined') {
+                typeVisibility[type] = true;
+              }
+            }
+
+            typeToMarkers[type].push(marker);
+
+            if (typeVisibility[type]) {
+              marker.addTo(map);
+            }
+
+            markers.push(marker);
+          });
+
+          buildLegend([...legendTypes]);
+          updateSuggestions(input.value);
         })
         .catch(error => {
-            console.error("Failed to load pins.json:", error);
+          console.error("Failed to load pins.json:", error);
         });
     }
 
-    // Auto-refresh every 60 seconds
-    setInterval(loadPins, 60 * 1000);
-    loadPins(); // initial load
+    function buildLegend(types) {
+      const legendDiv = document.getElementById('legend-content');
+      legendDiv.innerHTML = '';
+
+      types.sort().forEach(type => {
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = typeVisibility[type];
+        checkbox.id = `legend-${type}`;
+        checkbox.onchange = () => toggleType(type, checkbox.checked);
+
+        const label = document.createElement('label');
+        label.htmlFor = `legend-${type}`;
+        label.innerHTML = `<span style="display:inline-block;width:10px;height:14px;background:url('${getMarkerIconUrl(type)}') no-repeat center center; background-size:contain; margin-right:6px;"></span>${type}`;
+
+        label.prepend(checkbox);
+        legendDiv.appendChild(label);
+      });
+    }
+
+    function toggleType(type, isVisible) {
+      typeVisibility[type] = isVisible;
+      (typeToMarkers[type] || []).forEach(marker => {
+        if (isVisible) {
+          marker.addTo(map);
+        } else {
+          map.removeLayer(marker);
+        }
+      });
+    }
 
     function updateSuggestions(query) {
-        const lowerQuery = query.toLowerCase().trim();
-        suggestionsBox.innerHTML = '';
+      const lowerQuery = query.toLowerCase().trim();
+      suggestionsBox.innerHTML = '';
 
-        if (!lowerQuery) {
+      if (!lowerQuery) {
         suggestionsBox.style.display = 'none';
         return;
-        }
+      }
 
-        const matches = markers.filter(m => m.pinLabel.toLowerCase().includes(lowerQuery));
+      const matches = markers.filter(m => m.pinLabel.toLowerCase().includes(lowerQuery));
 
-        if (matches.length === 0) {
+      if (matches.length === 0) {
         suggestionsBox.style.display = 'none';
         return;
-        }
+      }
 
-        matches.forEach(marker => {
+      matches.forEach(marker => {
         const div = document.createElement('div');
         div.className = 'suggestion';
         div.textContent = marker.pinLabel;
 
         div.onclick = () => {
-            map.setView(marker.getLatLng(), 15);
-            marker.openPopup();
-            suggestionsBox.innerHTML = '';
-            suggestionsBox.style.display = 'none';
-            input.value = marker.pinLabel;
+          map.setView(marker.getLatLng(), 15);
+          marker.openPopup();
+          suggestionsBox.innerHTML = '';
+          suggestionsBox.style.display = 'none';
+          input.value = marker.pinLabel;
         };
 
         suggestionsBox.appendChild(div);
-        });
+      });
 
-        suggestionsBox.style.display = 'block';
+      suggestionsBox.style.display = 'block';
     }
 
     input.addEventListener('input', () => {
-        updateSuggestions(input.value);
+      updateSuggestions(input.value);
     });
 
     document.addEventListener('click', (e) => {
-        if (!document.getElementById('search').contains(e.target)) {
+      if (!document.getElementById('search').contains(e.target)) {
         suggestionsBox.style.display = 'none';
-        }
+      }
     });
-    </script>
+
+    loadPins();
+    setInterval(loadPins, 60 * 1000);
+  </script>
 
 </body>
 </html>
